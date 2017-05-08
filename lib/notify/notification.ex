@@ -17,9 +17,9 @@ defmodule Notify.Notification do
   defp get_icon(status) do
     case status do
       "" ->
-        Application.app_dir(:notify, "priv/bell.png")
+        Application.app_dir(:notify_ex, "priv/bell.png")
       _ ->
-        Application.app_dir(:notify, status)
+        Application.app_dir(:notify_ex, status)
     end
   end
 end
