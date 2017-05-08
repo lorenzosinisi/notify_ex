@@ -1,4 +1,4 @@
-# Notify
+# Notify <img src="priv/project_icon.png" alt="Notify" width="50" height="50" />
 
 ### Elixir wrapper for notify-send.
 

@@ -9,7 +9,7 @@ defmodule Notify.Mixfile do
      start_permanent: Mix.env == :prod,
      description: description(),
      package: package(),
-     source_url: "https://github.com/aguxez/notify_ex"
+     source_url: "https://github.com/aguxez/notify_ex",
      deps: deps()]
   end
 
@@ -30,12 +30,12 @@ defmodule Notify.Mixfile do
   defp package do
     [
       maintainers: ["Miguel Diaz"],
-      links: %{Github: "https://github.com/aguxez/notify_ex"}
+      links: %{Github: "https://github.com/aguxez/notify_ex"},
       licenses: ["MIT License"]
     ]
   end
 
   defp deps do
-    []
+    [{:ex_doc, ">= 0.0.0", only: :dev}]
   end
 end
