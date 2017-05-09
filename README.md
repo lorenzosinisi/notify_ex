@@ -4,7 +4,7 @@
 
 ## Installation
 
-Install `notify` by adding it to your list of dependencies in `mix.exs`:
+Install `notify_ex` by adding it to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
