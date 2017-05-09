@@ -8,7 +8,7 @@ Install `notify` by adding it to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:notify_ex, "~> 0.1.0"}]
+  [{:notify_ex, "~> 0.1.3"}]
 end
 ```
 
