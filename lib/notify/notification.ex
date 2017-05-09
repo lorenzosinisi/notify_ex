@@ -19,7 +19,9 @@ defmodule Notify.Notification do
       "" ->
         Application.app_dir(:notify_ex, "priv/bell.png")
       _ ->
-        Application.app_dir(:notify_ex, status)
+        Path.absname(status)
     end
   end
 end
+
+# Notify.send("Test", "Desc", "low", 3000, "icon.png")
