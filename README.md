@@ -13,7 +13,7 @@ end
 ```
 
 ## Read first
-`name` and `message` are first and second value, then you can pass a list of
+`name` and `message` are first and second parameters, then you can pass a list of
 options as: `:urgency, :time, :icon`.
 
 ## Usage
