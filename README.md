@@ -8,21 +8,16 @@ Install `notify_ex` by adding it to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:notify_ex, "~> 0.1.3"}]
+  [{:notify_ex, "~> 0.2.0"}]
 end
 ```
 
 ## Read first
-List of parameters must be passed in order as:
-
-`title, description, urgency, time, icon`
-
-If you want to only change let's say, the time but not the urgency you must provide the urgency level anyway. Skipping one will send defaults for the other parameters
-
-If you skip urgency then time and icon will be sent their default values.
+`name` and `message` are first and second value, then you can pass a list of
+options as: `:urgency, :time, :icon`.
 
 ## Usage
 ```elixir
-iex> Notify.send("Notify", "Testing Notify", "low", 4000)
-iex> Notify.send("Notify", "Another notify test")
+iex> Notify.send("Notify", "Testing Notify", urgency: "low")
+iex> Notify.send("Notify", "Another notify test", time: 4000, icon: "PATH-TO-ICON")
 ```

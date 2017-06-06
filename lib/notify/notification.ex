@@ -23,5 +23,3 @@ defmodule Notify.Notification do
     end
   end
 end
-
-# Notify.send("Test", "Desc", "low", 3000, "icon.png")
