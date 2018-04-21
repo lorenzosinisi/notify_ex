@@ -12,11 +12,10 @@ def deps do
 end
 ```
 
-## Read first
+## Usage
 `name` and `message` are first and second parameters, then you can pass a list of
 options as: `:urgency, :time, :icon`.
 
-## Usage
 ```elixir
 iex> Notify.send("Notify", "Testing Notify", urgency: "low")
 iex> Notify.send("Notify", "Another notify test", time: 4000, icon: "PATH-TO-ICON")
