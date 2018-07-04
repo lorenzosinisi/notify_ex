@@ -11,7 +11,7 @@ defmodule Notify.Notification do
   end
 
   defp notify do
-    System.find_executable("notify-send")
+    System.find_executable("notify-send") || System.find_executable("terminal-notifier")
   end
 
   defp get_icon(status) do
